@@ -1,0 +1,19 @@
+.card {
+    margin-top: 15px;
+    border: 1px solid blue;
+    width: 550px;
+    padding: 45px;
+    position: absolute;
+    top: 10%;
+    left: 35%;
+    border-radius: 20px;
+    background-color: lightcyan;
+}
+
+.form-group {
+    margin-bottom: 30px;
+}
+
+.btn {
+    align-items: center;
+}

@@ -1,0 +1,103 @@
+<nav class="navbar navbar-light bg-primary">
+    <div class="container-fluid">
+        <h2>Reataurant Records App</h2>
+        <div class="d-flex">
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                (click)="clickAddRestro()">Add
+                Restaurant</button>
+            <button routerLink="/login" class="btn btn-danger mx-2">Logout</button>
+        </div>
+    </div>
+</nav>
+
+<!-- jumboTron shown here -->
+
+<div class="cover-page p-5 mb-4 bg-light rounded-3">
+    <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold">Restaurant Records Managment</h1>
+        <p class="col-md-8 fs-4">Design and Develop by</p>
+        <a class="btn btn-primary btn-lg" type="button" target="_+blank" href="https://www.facebook.com/Rbhvsr1998/">
+            <img [src]="image" style="height:30px ; width: 30px">Rohit Bhavsar</a>
+    </div>
+</div>
+
+<!-- table shown here -->
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Reastaurant ID </th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Mobile</th>
+            <th scope="col">Address</th>
+            <th scope="col">Service</th>
+            <th scope="col">Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let data of allRestaurantData">
+            <td>{{data.id}}</td>
+            <td>{{data.name}}</td>
+            <td>{{data.email}}</td>
+            <td>{{data.mobile}}</td>
+            <td>{{data.address}}</td>
+            <td>{{data.Service}}</td>
+            <td>
+                <button type="button" class="btn btn-info" (click)="editData(data)" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">Edit</button> &nbsp;
+                <button type="button" class="btn btn-danger" (click)="deleteData(data)">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- bootstrap modal -->
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Add Restaurant</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form [formGroup]="formVal">
+                    <div class="mb-3">
+                        <label for="exampleInputID" class="form-label">ID</label>
+                        <input type="id" class="form-control" formControlName="id" id="exampleInputID">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputName" class="form-label">Name </label>
+                        <input type="name" class="form-control" formControlName="name" id="exampleInputName">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmailAddress" class="form-label">Email address</label>
+                        <input type="email_address" class="form-control" formControlName="email"
+                            id="exampleInputEmailAddress">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputMobile" class="form-label">Mobile</label>
+                        <input type="mobile" class="form-control" formControlName="mobile" id="exampleInputMobile">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputAddress" class="form-label">Address</label>
+                        <textarea formControlName="address" class="form-control"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputService" class="form-label">Service</label>
+                        <input type="service" class="form-control" formControlName="Service" id="exampleInputService">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" id='clear' class="btn btn-secondary">Close</button>
+                <button *ngIf="showAdd" type="button" class="btn btn-primary" (click)="addRestaurant()">Add
+                    Restaurant</button>
+                <button *ngIf="showbtn" type="button" class="btn btn-primary" (click)="updateData()">Update
+                    Restaurant</button>
+
+            </div>
+        </div>
+    </div>
+</div>

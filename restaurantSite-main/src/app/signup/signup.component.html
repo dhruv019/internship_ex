@@ -1,0 +1,47 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="text-center">
+                    <h1>Restaurant Signup</h1>
+                    <h5>Get Free Membership</h5>
+                    <hr>
+                </div>
+                <form [formGroup]="signupForm" (ngSubmit)="signup()">
+                    <div class="form-group">
+                        <label class="form-label">Name</label>
+                        <input type="text" class="form-control" formControlName="name" id="exampleInputName"
+                            placeholder="Enter Your Name">
+                        <span *ngIf="nameValidator && nameValidator.invalid && nameValidator.touched"
+                            class="text-danger">Name is required!</span>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Mobile Number</label>
+                        <input type="text" class="form-control" formControlName="mobile" id="exampleInputMobile"
+                            placeholder="Enter Mobile Number">
+                        <span *ngIf="numberValidator && numberValidator.invalid && numberValidator.touched"
+                            class="text-danger">Mobile Number is Invalid!</span>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Email Id</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" formControlName="email"
+                            placeholder="Enter Email">
+                        <span *ngIf="emailValidator && emailValidator.invalid && emailValidator.touched"
+                            class="text-danger">please Enter Valid Email Adddress!</span>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Password</label>
+                        <input type="password" class="form-control" formControlName="password"
+                            id="exampleInputPassword1" placeholder="Enter Password">
+                        <span *ngIf="passValidator && passValidator.invalid && passValidator.touched"
+                            class="text-danger">please Enter Password!</span>
+                    </div>
+                    <div class="text-center"><button [disabled]="signupForm.invalid" type="submit"
+                            class="btn btn-primary">Signup</button><br><br>
+                        <a routerLink="/login">Already Member? Click to Login</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

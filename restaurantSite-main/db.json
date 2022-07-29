@@ -1,0 +1,64 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "name": "royal hotel",
+      "email": "royalhotel@gmail.com",
+      "mobile": "9876543219",
+      "address": "vadodara , gujarat",
+      "Service": "veg and non-veg"
+    },
+    {
+      "id": 2,
+      "name": "hariyali",
+      "email": "hariyali@gmail.com",
+      "mobile": "7654738976",
+      "address": "vadodara , gujarat",
+      "Service": "veg"
+    },
+    {
+      "id": 4,
+      "name": "veronica hotel",
+      "email": "veronica@gmail.com",
+      "mobile": "76879087656",
+      "address": "vadodara , gujarat",
+      "Service": "veg"
+    },
+    {
+      "id": 5,
+      "name": "courtyard hotel",
+      "email": "courtyard@gmail.com",
+      "mobile": "7688996756",
+      "address": "vadodara , gujarat",
+      "Service": "veg"
+    },
+    {
+      "id": 6,
+      "name": "banyan paradise",
+      "email": "banyan@gmail.com",
+      "mobile": "7799098987",
+      "address": "vadodara , gujarat",
+      "Service": "veg and nonveg"
+    },
+    {
+      "id": 7,
+      "name": "surya palace",
+      "email": "surya@gmail.com",
+      "mobile": "9898989898",
+      "address": "vadodara",
+      "Service": "veg and nonveg"
+    }
+  ],
+  "users": [
+    {
+      "name": "rohit",
+      "mobile": "9712796321",
+      "email": "rohit@gmail.com",
+      "password": "rohit@gmail",
+      "id": 1
+    }
+  ],
+  "profile": {
+    "name": "rohit bhavsar"
+  }
+}

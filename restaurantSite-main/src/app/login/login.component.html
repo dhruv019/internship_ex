@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="text-center">
+                    <h1>Restaurant Login</h1>
+                    <h5>Feel Free to Login</h5>
+                    <hr>
+                </div>
+                <form [formGroup]="loginVal" (ngSubmit)="onLogin()">
+                    <div class="form-group">
+                        <label class="form-label" for="exampleInputEmail1">Email Id</label>
+                        <input type="email" class="form-control" formControlName="email" id="exampleInputEmail1"
+                            aria-describedby="emailHelp" placeholder="Enter email">
+                        <span *ngIf="emailValidator && emailValidator.invalid && emailValidator.touched"
+                            class="text-danger">please Enter valid Email address!</span>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1"
+                            formControlName="password" placeholder="Password">
+                        <span *ngIf="passValidator && passValidator.invalid && passValidator.touched"
+                            class="text-danger">please Enter Password</span>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" [disabled]="loginVal.invalid"
+                            class="btn btn-primary">Submit</button><br><br>
+                        <a routerLink="/signup">New user? click to signup</a>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
