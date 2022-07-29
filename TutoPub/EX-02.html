@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX-02</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- <script>
+        $(document).ready(function () {
+            /* Check width on page load*/
+            if ($(window).width() < 320) {
+                $('.test').addClass('w-75');
+            }
+            else { }
+        });
+
+        $(window).resize(function () {
+            /*If browser resized, check width again */
+            if ($(window).width() < 320) {
+                $('.test').addClass('w-75');
+            }
+            else { $('.test').removeClass('w-75'); }
+        });
+    </script> -->
+</head>
+
+<body>
+    <div class="container-fluid bg-dark p-2">
+        <div class="row">
+            <img src="tutopub-logo.png" alt="logo" class="my-2 col-sm-3">
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="border mt-4 py-3 rounded-3">
+            <div class="test container w-75">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="mt-3 text-primary">Talk to experts</h1>
+                        <h6 class="fw-bold text-capitalize">Fill in the blank below and we will get back to you</h6>
+                    </div>
+
+                    <form>
+                        <div class="row input-group">
+                            <div class="col-md-6 mt-2">
+                                <label class="pt-3">First Name</label>
+                                <input type="text" class="form-control input-group-sm rounded-0">
+                            </div>
+                            <div class="col-md-6 mt-2">
+                                <label class="pt-3">Last Name</label>
+                                <input type="text" class="form-control rounded-0">
+                            </div>
+                            <div class="col-md-12  mt-2">
+                                <label class="pt-3">Company Name</label>
+                                <input type="text" class="form-control rounded-0">
+                            </div>
+                            <div class="col-md-6  mt-2">
+                                <label class="pt-3">Mobile</label>
+                                <input type="text" class="form-control input-group-lg rounded-0">
+                            </div>
+                            <div class="col-md-6  mt-2">
+                                <label class="pt-3">Email</label>
+                                <input type="text" class="form-control rounded-0 mt-auto">
+                            </div>
+                            <div class="col-md-6  mt-2">
+                                <label class="pt-3">Appointment date</label>
+                                <input type="date" class="form-control input-group-lg rounded-0">
+                            </div>
+                            <div class="col-md-6  mt-2">
+                                <label class="pt-3">Time</label>
+                                <input type="time" class="form-control rounded-0">
+                            </div>
+                            <div class="col-md-12  mt-2">
+                                <label class="pt-3">Address</label>
+                                <textarea rows="5" class="form-control rounded-0"></textarea>
+                            </div>
+                            <div class="mt-3 mb-5">
+                                <button class=" btn-lg bg-primary border-0 text-white rounded-2">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid mt-5 p-0">
+            <div class="row g-2">
+                <div class="col-md-4">
+                    <div class="card  border-5 border-danger bg-danger">
+                        <div class="fw-bold text-white border-0 p-3 mb-2">
+                            <h4>I am Rounded Image</h4>
+                        </div>
+                        <div class="card-body text-center py-4 mb-5">
+                            <img src="images\profile-pic.png" alt="logo" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-5 border-warning bg-warning">
+                        <div class="fw-bold text-white border-0 p-3 mb-2">
+                            <h4>I am Rounded Circle Image</h4>
+                        </div>
+                        <div class="card-body text-center py-4 mb-5">
+                            <img src="images\profile-pic.png" alt="logo" class="rounded-circle img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-info">
+                        <div class="fw-bold text-white border-0 p-3 mb-2">
+                            <h4>I am Thumbnail Image</h4>
+                        </div>
+                        <div class="card-body text-center py-4 mb-5">
+                            <img src="images\profile-pic.png" alt="logo" class="img-thumbnail img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 mt-5">
+                    <h2 class="fw-bolder">Profile Cards</h2>
+                </div>
+            </div>
+            <div class="row mt-1 g-2">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body bg-danger text-center py-4 pt-5">
+                            <img src="images\profile-pic.png" alt="logo" class="rounded-circle img-fluid">
+                            <div class="text-white p-4 text-start">
+                                <h5>Lorem, ipsum dolor.</h5>
+                                <p class="pt-3 ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia
+                                    praesentium minima
+                                    explicabo officia nisi tempora delectus. Minus quidem, aliquid veritatis fugiat
+                                    sequi
+                                    perspiciatis eligendi iure laboriosam iusto, repellat minima? Quia.</p>
+                            </div>
+                        </div>
+                        <div class="card-footer text-muted px-5">Last Updated 10 Mins ago</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body bg-secondary text-center py-4 pt-5">
+                            <img src="images\profile-pic.png" alt="logo" class="rounded-circle img-fluid">
+                            <div class="text-white p-4 text-start">
+                                <h5>Lorem, ipsum dolor.</h5>
+                                <p class="pt-3 ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia
+                                    praesentium minima
+                                    explicabo officia nisi tempora delectus. Minus quidem, aliquid veritatis fugiat
+                                    sequi
+                                    perspiciatis eligendi iure laboriosam iusto, repellat minima? Quia.</p>
+                            </div>
+                        </div>
+                        <div class="card-footer text-muted px-5">Last Updated 10 Mins ago</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body bg-success text-center py-4 pt-5">
+                            <img src="images\profile-pic.png" alt="logo" class="rounded-circle img-fluid">
+                            <div class="text-white p-4 text-start">
+                                <h5>Lorem, ipsum dolor.</h5>
+                                <p class="pt-3 ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia
+                                    praesentium minima
+                                    explicabo officia nisi tempora delectus. Minus quidem, aliquid veritatis fugiat
+                                    sequi
+                                    perspiciatis eligendi iure laboriosam iusto, repellat minima? Quia.</p>
+                            </div>
+                        </div>
+                        <div class="card-footer text-muted px-5">Last Updated 10 Mins ago</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
